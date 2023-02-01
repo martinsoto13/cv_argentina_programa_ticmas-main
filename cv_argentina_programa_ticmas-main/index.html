@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- Open Graph data -->
+    <meta property="og:title" content="CVMaldonadoMartin" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="/>
+    <meta property="og:description" content="Trabajo Final" />
+    <!-- Principal -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="Favicon.png">
+    <title>CVMaldonadoMartin</title>
+        <!--- 
+            Trabajo Final
+            Argentina Programa 4.0
+            Academia TicMas
+            Curso Front end Academy - 2023
+            Primeros pasos del desarrollo frontend
+        -->
+</head>
+
+<body>
+    <a name="inicio"></a>
+    <nav id="menu">
+        <ul>
+            <li><a href="#infopersonal">Información Personal</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#formulario">Formulario De Contacto</a></li>
+        </ul>
+    </nav>
+    <a name="inicio"></a>
+    <head>
+        <div>
+            <table id="encabezadotitulo">
+                <tr>
+                    <td><h1 id="encabezadotitulotexto">Curriculum Vitae</h1></td>                    
+                </tr>
+            </table>
+            <table id="encabezadousuario">
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                        <p id="saludo" class="encabezadousrtexto">Saludo</p>
+                        <p class="encabezadousrtexto">Mi nombre es</p>
+                        <p class="encabezadonombretexto">Martin Maldonado</p>
+                    </td>
+                    <td>
+                        <img src="https://randomuser.me/api/portraits/men/51.jpg">
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </table>
+            <table id="encabezadosubtitulo">
+                <tr>
+                    <td><h3 id="encabezadosubtitulotexto">"Soy un apasionado desarrollador frontend. Mi experiencia me ha brindado una sólida comprensión de lenguajes y tecnologías como JavaScript, HTML, CSS. Soy un colaborador eficaz en equipo y me enorgullezco de mi capacidad para resolver problemas y tomar decisiones eficaces. Además, siempre estoy buscando aprender y me encanta compartir mis conocimientos con otros"</h3></td>                    
+                </tr>
+            </table>
+        </div>
+    </head>
+
+    <main>
+        <a name="infopersonal"></a>
+        <h2 class="banding01">Información personal:</h2>
+        <button type="button" class="contraer">Ver detalle</button>
+        <section class="contenido">
+            <li>Nombre completo: Maldonado martin</li>
+            <li>Fecha de nacimiento: 01/01/1983</li>
+            <li>Edad: 39 años</li>
+            <li>Lugar de residencia: Cosquin, Argentina</li>
+        </section>
+        <a name="contacto"></a>
+        <h2 class="banding02">Información de contacto:</h2>
+        <button type="button" class="contraer">Ver detalle</button>
+        <section class="contenido">
+            <li>Telefono: 3517597979</li>
+            <li>Email: martin.maldonado26@gmail.com</li>
+        </section>
+        <a name="experiencia"></a>
+        <h2 class="banding01">Experiencia Laboral:</h2>
+        <button type="button" class="contraer">Ver detalle</button>
+        <section class="contenido">            
+            <li>Empresa 1 , 2 años, Front end devolper Trainee</li>
+            <li>Empresa 2 , 1 año, Front end devolper jr</li>
+            <li>Empresa 3 , 5 años, Front end devolper jr</li>
+        </section>
+        <a name="videocv"></a>
+        <h2 class="banding02">VideoCV:</h2>
+        <button type="button" class="contraer">Ver detalle</button>
+        <section class="contenido">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ds8lRXWfoPE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+        <a name="formulario"></a>
+        <h2 class="banding01">Formulario de contacto:</h2>
+        <button type="button" class="contraer">Ver detalle</button>
+        <section class="contenido">
+            <!-- Formulario configurado con emailjs con un alert con sweet alert -->
+            <form id="form">
+                <div class="field">
+                  <label for="from_name">Nombre y apellido</label>
+                  <input type="text" name="from_name" id="from_name" required>
+                </div>
+                <div class="field">
+                  <label for="message">Escribe tu consulta</label>
+                  <input type="text" name="message" id="message" required>
+                </div>
+                <div class="field">
+                  <label for="reply_to">Email para ser contactado</label>
+                  <input type="email" name="reply_to" id="reply_to" required>
+                </div>
+              
+                <input type="submit" class="btn btn-dark" id="button" value="Enviar Email" >
+              </form>
+           
+        </section>
+    </main>
+
+    <footer id="navegacion">
+        <span class="material-symbols-outlined">
+            home
+        </span>
+        <a href="#inicio">Volver al Inicio</a>
+    </footer>
+    <script type="text/javascript"
+              src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+            
+            <script type="text/javascript">
+              emailjs.init('61trh_xJ7oeDwkJkR')
+            </script>
+            <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
